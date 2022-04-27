@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    font-size: 20px;
+}
+
+.div_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width:15%;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 5vh;
+}
+
+.menu a{
+    font-size: 20px;
+}
+
+.accueil{
+    width: 100%;
+}
+
+.img_accueil{
+    width: 100%;
+    padding-top: 15vh;
+    
+}
+
+h2{
+    padding-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+section{
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+}

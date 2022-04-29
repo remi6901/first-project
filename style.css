@@ -3,6 +3,7 @@
     font-family:'Georgia','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
 }
     body{
+    width: 100%;
     margin:0;
     font-size: 20px;
 }
@@ -57,12 +58,14 @@ h2{
 
 .word_home{
 text-align: center;
+padding-bottom: 20vh;
 }
 
 .section_img{
     width: 100%;
     height: 50vh;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     padding-top: 20vh;
     padding-bottom: 10vh;
@@ -72,16 +75,16 @@ text-align: center;
 .container_home, .container_home3{
     border: 2px solid white;
     border-radius: 20px;
-    width: 30%;
-    height: 50vh;
+    width: 20%;
+    height: 70vh;
     background-color: rgb(210, 210, 210);
 }
 
 .container_home2{
     border: 2px solid white;
     border-radius: 20px;
-    width: 40%;
-    height: 60vh;
+    width: 30%;
+    height: 80vh;
     background-color: rgb(210, 210, 210);
 }
 /*CSS home*/
@@ -92,7 +95,7 @@ text-align: center;
 
 .img_history{
     width: 100%;
-    height: auto;
+    
 }
 
 .scetion_history{
@@ -104,11 +107,16 @@ text-align: center;
     padding-right: 5%;
 }
 
-.img-history{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    height:50vh;
+.panorama{
+    width: 100%;
+    height: 40vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
 }
+    
+
 
 .img-history2{
     width: 100%;
@@ -119,11 +127,77 @@ text-align: center;
 }
 /*CSS history*/
 /*CSS site*/
+.site{
+    width: 100%;
+}
 
+.img_site{
+    width: 100%;
+}
 
+.div_slider{
+     width: 100%;
+     height: 60vh;
+     display: flex;
+     justify-content: center;
+}
 
+ .slider{
+    width: 40%;
+    height: 50vh;
+    animation: animate 120s linear infinite;
+    background-size: cover;
+    background-color: black;
+}
 
-
+/*@keyframes animate{
+    0%,100%{
+        background-image: url(assets/slider/photo1);
+    }
+    7%{
+        background-image: url(assets/slider/photo2.jpg);
+    }
+    13%{
+        background-image: url(assets/slider/photo3.jpg);
+    }
+    20%{
+        background-image: url(assets/slider/photo4.jpg);
+    }
+    26%{
+        background-image: url(assets/slider/photo5.jpg);
+    }
+    33%{
+        background-image: url(assets/slider/photo6.jpg);
+    }
+    39%{
+        background-image: url(assets/slider/photo7.jpg);
+    }
+    47%{
+        background-image: url(assets/slider/photo8.jpg);
+    }
+    53%{
+        background-image: url(assets/slider/photo9.jpg);
+    }
+    59%{
+        background-image: url(assets/slider/photo10.jpg);
+    }
+    65%{
+        background-image: url(assets/slider/photo11.jpg);
+    }
+    71%{
+        background-image: url(assets/slider/photo12.jpg);
+    }
+    77%{
+        background-image: url(assets/slider/photo13.jpg);
+    }
+    83%{
+        background-image: url(assets/slider/photo14.jpg);
+    }
+    90%{
+        background-image: url(assets/slider/photo15.jpg);
+    }
+    
+}*/
 /*CSS site*/
 /*CSS footer*/
 footer{

@@ -36,6 +36,8 @@
    text-shadow: black 10px 15px 10px;
    font-size: 25px;
 }
+
+
 /*CSS header*/
 /*CSS home*/
 .home{
@@ -65,6 +67,11 @@ h2{
 
 .word_home{
 text-align: center;
+width: 100%;
+}
+.word_home p{
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .section_img{
@@ -125,11 +132,11 @@ text-align: center;
     
 }
 
-.section_history{
+.section_paragraph{
     width: 100%;
 }
 
-.div_history{
+.div_paragraph{
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -164,13 +171,6 @@ text-align: center;
     width: 100%;
 }
 
-.div_site{
-    padding-left: 5%;
-}
-
-.div_site h3{
-    line-height: 15vh;
-}
 .container {
     position: relative;
     width: 320px;
@@ -265,15 +265,26 @@ form{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 15vh;
 }
 
 form input, form textarea, form label{
     width: 50%;
-    margin-left: 25%;
-    
-    
+    margin-left: 25%;   
 }
 
+form .button{
+   width: 15%;
+   margin-left:60%;
+}
+
+.bye{
+    font-style:oblique;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
 
 /*CSS contact*/
 /*CSS footer*/
@@ -303,11 +314,43 @@ footer{
 footer a:hover{
     font-size: 25px;
 }
-
-
-
-
-    
-
-
 /*CSS footer*/
+/*CSS Media query*/
+@media screen and (max-width:800px) {
+    body{
+        font-size: 14px;
+    }
+    .logo{
+        width: 25%;
+    }
+   .menu{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       padding-left: 15%;
+       padding-right: 15%;
+   }
+
+   .menu li{
+      border: 2px solid black;
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+   }
+
+   .menu a{
+       font-size: 16px;
+   }
+   .section_img{
+       display: flex;
+       flex-direction: column;
+       height: 225vh;
+   }
+   .container_home, .container_home2, .container_home3{
+       margin-right: 25%;
+       margin-left: 25%;
+       width: 50%;
+       height: 20%;
+   }
+
+}

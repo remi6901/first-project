@@ -88,16 +88,18 @@ width: 100%;
     border: 2px solid white;
     border-radius: 20px;
     width: 25%;
-    height: 85vh;
+    height: 100vh;
     background-color: rgb(210, 210, 210);
+    font-size: 16px;
 }
 
 .container_home2{
     border: 2px solid white;
     border-radius: 20px;
     width: 35%;
-    height: 95vh;
+    height: 115vh;
     background-color: rgb(210, 210, 210);
+    font-size: 16px;
 }
 
 .container_home img{
@@ -106,16 +108,14 @@ width: 100%;
 }
 .container_home2 img{
     padding-left: 15%;
-    padding-top: 15%;
+    padding-top: 20%;
+    
 }
 .container_home3 img{
     padding-left: 25%;
     padding-top: 15%;
 }
 
-.container_home, .container_home2, .container_home3{
-    font-size: 16px;
-}
 .container_home h4, .container_home2 h4, .container_home3 h4{
     text-align: center;
 }
@@ -315,8 +315,9 @@ footer a:hover{
     font-size: 25px;
 }
 /*CSS footer*/
-/*CSS Media query*/
-@media screen and (max-width:800px) {
+/*CSS Media queries*/
+/*CSS Media queries home*/
+@media screen and (max-width:1000px) {
     body{
         font-size: 14px;
     }
@@ -341,16 +342,32 @@ footer a:hover{
    .menu a{
        font-size: 16px;
    }
+
+   .word_home p{
+       padding-bottom: 15vh;
+   }
    .section_img{
        display: flex;
        flex-direction: column;
-       height: 225vh;
+       height: 300vh;
    }
-   .container_home, .container_home2, .container_home3{
-       margin-right: 25%;
-       margin-left: 25%;
-       width: 50%;
-       height: 20%;
+   .container_home, .container_home2, .container_home3{ 
+       width: 100%;
+       height: 40%;
+   }
+   .container_home ul, .container_home2 ul, .container_home3 ul{
+       padding-left: 20%;
+       padding-right: 20%;
+       padding-bottom: 20%;
    }
 
+   .container_home img, .container_home2 img, .container_home3 img{
+       width: 40%;
+       padding-left: 30%;
+       padding-right: 30%;   
+   }
+
+ 
+   /*CSS Media queries home*/
+ 
 }

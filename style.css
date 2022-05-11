@@ -5,6 +5,7 @@
     body{
     margin:0;
     font-size: 20px;
+    
 }
 /* CSS body*/
 /*CSS header*/
@@ -52,8 +53,8 @@
 .border{
     width: 10%;
     border-bottom: 2px solid black;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     margin-left: 45%;
     margin-right: 45%;
 }
@@ -72,6 +73,7 @@ width: 100%;
 .word_home p{
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 15vh;
 }
 
 .section_img{
@@ -87,10 +89,13 @@ width: 100%;
 .container_home, .container_home3{
     border: 2px solid white;
     border-radius: 20px;
-    width: 25%;
+    width: 30%;
     height: 100vh;
     background-color: rgb(210, 210, 210);
     font-size: 16px;
+    box-shadow: 50px 5px 100px black;
+    margin-right: 1%;
+
 }
 
 .container_home2{
@@ -100,20 +105,24 @@ width: 100%;
     height: 115vh;
     background-color: rgb(210, 210, 210);
     font-size: 16px;
+    box-shadow: 50px 5px 100px black;
+    margin-right: 1%;
 }
 
 .container_home img{
-    padding-left: 15%;
-    padding-top: 30%;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 .container_home2 img{
-    padding-left: 15%;
+    padding-left: 10%;
+    padding-left: 10%;
     padding-top: 20%;
+    padding-bottom: 10vh;
     
 }
 .container_home3 img{
-    padding-left: 25%;
-    padding-top: 15%;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 
 .container_home h4, .container_home2 h4, .container_home3 h4{
@@ -132,6 +141,21 @@ width: 100%;
     
 }
 
+.img-history1{
+    width: 100%;
+
+}
+
+.img-history1 img{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    box-shadow: 20px 10px 50px black;
+    border-radius: 10px;
+    
+}
+
 .section_paragraph{
     width: 100%;
 }
@@ -143,11 +167,15 @@ width: 100%;
 
 .panorama{
     width: 100%;
-    height: 40vh;
-    margin-bottom: 35vh;
+    padding-bottom: 10vh;
     padding-top: 10vh;
     display: flex;
     justify-content: center;
+}
+
+.panorama img{
+    box-shadow: 20px 10px 50px black;
+    border-radius: 10px;
 }
 
 .img-history2{
@@ -160,6 +188,7 @@ width: 100%;
 
 .img-history2 img{
     border-radius: 10px;
+    box-shadow: 20px 10px 50px black;
 }
 /*CSS history*/
 /*CSS site*/
@@ -173,19 +202,21 @@ width: 100%;
 
 .container {
     position: relative;
-    width: 320px;
-    height: 100vh;
+    width:260px;
+    height: 120vh;
     margin: 100px auto 0 auto;
     perspective: 1000px;
+   
     
   }
   
   .carousel {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80%;
     transform-style: preserve-3d; 
-    animation: rotate360 60s infinite forwards linear;}
+    animation: rotate360 150s infinite forwards linear;    
+}
 
     .img-carousel { 
         position: absolute;
@@ -199,40 +230,52 @@ width: 100%;
       }
 
     .img-carousel:nth-child(1){
-        background-image: url(assets/slider/photo.portrait\ \(1\).jpg);
+        background-image: url(assets/site/carousel/photo-carousel\ \(1\).jpg);
         transform:rotateY(0deg) translateZ(430px);
     }
     .img-carousel:nth-child(2){
-        background-image: url(assets/slider/photo.portrait\ \(2\).jpg);
-        transform: rotateY(40deg) translateZ(430px);
+        background-image: url(assets/site/carousel/photo-carousel\ \(2\).jpg);
+        transform: rotateY(30deg) translateZ(430px);
     }
     .img-carousel:nth-child(3){
-        background-image: url(assets/slider/photo.portrait\ \(3\).jpg);
-        transform: rotateY(80deg) translateZ(430px);
+        background-image: url(assets/site/carousel/photo-carousel\ \(3\).jpg);
+        transform: rotateY(60deg) translateZ(430px);
     }
     .img-carousel:nth-child(4){
-        background-image: url(assets/slider/photo.portrait\ \(4\).jpg);
-        transform: rotateY(120deg) translateZ(430px);
+        background-image: url(assets/site/carousel/photo-carousel\ \(4\).jpg);
+        transform: rotateY(90deg) translateZ(430px);
     }
     .img-carousel:nth-child(5){
-        background-image: url(assets/slider/photo.portrait\ \(5\).jpg);
-        transform: rotateY(160deg) translateZ(430px);
+        background-image: url(assets/site/carousel/photo-carousel\ \(5\).jpg);
+        transform: rotateY(120deg) translateZ(430px);
     }
     .img-carousel:nth-child(6){
-        background-image: url(assets/slider/photo.portrait\ \(6\).jpg);
-        transform: rotateY(200deg) translateZ(430px);
+        background-image: url(assets/site/carousel/photo-carousel\ \(6\).jpg);
+        transform: rotateY(150deg) translateZ(430px);
     }
     .img-carousel:nth-child(7){
-        background-image: url(assets/slider/photo.paysage\ \(7\).jpg);
-        transform:rotateY(240deg) translateZ(430px)
+        background-image: url(assets/site/carousel/photo-carousel\ \(7\).jpg);
+        transform:rotateY(180deg) translateZ(430px)
     }
     .img-carousel:nth-child(8){
-        background-image:url(assets/slider/photo.paysage\ \(8\).jpg);
-        transform: rotateY(280deg) translateZ(430px);
+        background-image:url(assets/site/carousel/photo-carousel\ \(8\).jpg);
+        transform: rotateY(210deg) translateZ(430px);
     }
     .img-carousel:nth-child(9){
-        background-image: url(assets/slider/photo.paysage\ \(9\).jpg);
-        transform: rotateY(320deg) translateZ(430px);
+        background-image: url(assets/site/carousel/photo-carousel\ \(9\).jpg);
+        transform: rotateY(240deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(10){
+        background-image: url(assets/site/carousel/photo-carousel\ \(10\).jpg);
+        transform: rotateY(270deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(11){
+        background-image: url(assets/site/carousel/photo-carousel\ \(11\).jpg);
+        transform: rotateY(300deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(12){
+        background-image: url(assets/site/carousel/photo-carousel\ \(12\).jpg);
+        transform: rotateY(330deg) translateZ(430px);
     }
 
     @keyframes rotate360{
@@ -244,8 +287,10 @@ width: 100%;
           }
         }
         
+        
         .section_flex_img{
             width: 100%;
+        
         }
         .div_flex_img{
             display: flex;
@@ -255,10 +300,12 @@ width: 100%;
         }   
         
         .div_flex_img img{
-            border: solid 5px white;
             border-radius: 30px;
-            margin-bottom: 5vh;       
+            margin-bottom: 5vh;
+            box-shadow:20px 20px 50px black;       
         }
+
+        
 /*CSS site*/
 /*CSS contact*/
 form{
@@ -311,6 +358,9 @@ footer{
     line-height: 15vh
 }
 
+.div_footer3{
+    display: flex;
+}
 footer a:hover{
     font-size: 25px;
 }
@@ -342,7 +392,7 @@ footer a:hover{
    .menu a{
        font-size: 16px;
    }
-
+   /*Media queries home*/
    .word_home p{
        padding-bottom: 15vh;
    }
@@ -354,6 +404,7 @@ footer a:hover{
    .container_home, .container_home2, .container_home3{ 
        width: 100%;
        height: 40%;
+       margin-top: 1vh;
    }
    .container_home ul, .container_home2 ul, .container_home3 ul{
        padding-left: 20%;
@@ -361,13 +412,44 @@ footer a:hover{
        padding-bottom: 20%;
    }
 
-   .container_home img, .container_home2 img, .container_home3 img{
-       width: 40%;
-       padding-left: 30%;
-       padding-right: 30%;   
+    .container_home img, .container_home2 img, .container_home3 img{
+       width: 70%;
+       padding-left: 15%;
+       padding-right: 15%;   
+   }
+/*Media queries home*/
+/*Media queries site*/
+   #border2{
+       border: none;
+   }
+   
+   .container{
+       height: 0;
+
+   }
+   .carousel{
+       display: none;
    }
 
- 
-   /*CSS Media queries home*/
+   .div_flex_img img{
+       width: 90%;
+   }
+   /*Media queires site*/
+   /*Media queries contact*/
+    form input, form textarea{
+    border: 2px solid black;
+    }
+    /*Media queries contact*/
+    /*Media queires contact*/
+    footer{
+        font-size: 12px;
+    }
+    .div_footer3 img{
+      height: 50%;
+      margin-top: 25%;
+      margin-bottom: 25%;
+    }
+    /*Media queries footer*/
+   
  
 }

@@ -20,17 +20,25 @@
     margin: auto;
 }
 
+.sideNav{
+    width: 100%;
+}
 .menu{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
 }
 
 .menu a{
     font-size: 20px;
     color: black;
+    cursor: pointer;
 }
 
 .menu a:hover{
@@ -351,7 +359,8 @@ footer{
 .div_footer1 a{
     color: black;
     line-height: 20vh;
-    text-decoration: underline;   
+    text-decoration: underline; 
+    cursor: pointer;  
 }
 
 .div_footer2 p{
@@ -374,24 +383,38 @@ footer a:hover{
     .logo{
         width: 25%;
     }
-   .menu{
+    .navMenu{
+        width: 100%;
+    }
+    .menu{
+        width: 50%;
        display: flex;
        flex-direction: column;
        text-align: center;
-       padding-left: 15%;
-       padding-right: 15%;
+       margin:0;
+       padding: 0;
+       padding-top: 5vh;
+       padding-bottom: 5vh;
    }
 
    .menu li{
-      border: 2px solid black;
-      width: 50%;
-      margin-left: 25%;
-      margin-right: 25%;
+      margin-top: 5px;
+      margin-right: 70%;
+      width: 40%;
+      margin-right: 100%;
+      background-color: rgb(210, 210, 210);
+      border-radius: 10px;
+      
    }
 
-   .menu a{
-       font-size: 16px;
+   .menu li a{
+       font-size: 14px;  
    }
+
+   .menu a:hover{
+      font-size: inherit ;;
+   }
+   
    /*Media queries home*/
    .word_home p{
        padding-bottom: 15vh;
@@ -450,6 +473,4 @@ footer a:hover{
       margin-bottom: 25%;
     }
     /*Media queries footer*/
-   
- 
 }

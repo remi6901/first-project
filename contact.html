@@ -8,16 +8,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pompei</h1>
+    <div class="div_logo">
+        <img class="logo" src="assets/logo-pompei.jpg" alt="loge-pompei">
+    </div>
     <header>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="history.html">Histoire</a></li>
-            <li><a href="site.html">Le site</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul class="menu">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="history.html">HISTOIRE</a></li>
+            <li><a href="site.html">LE SITE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </header>
-    <img src="assets/photo-contact.jpg" alt="photo-de-l'amphitheatre-de-pompei" width="1000px">
+    <img src="assets/contact/photo-contact.jpg" alt="photo-de-l'amphitheatre-de-pompei" width="100%">
+    <div class="border">
+    </div>
+    <h2>Formulaire de contact</h2>
+    <section class="section_paragraph">
+        <div class="div_paragraph">
+            <h3 class="h3_contact">Message:</h3>
+        </div>
+    </section>
+    <form action="">
+        <label for="first_name"> Nom et Prenom</label> 
+        <input type="text" name="first_name" id="first_name" placeholder="Ex: Durand Martin">
+        <label for="e-mail">E-mail</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="Ex: ....@gmail.com">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Taper votre texte ici"></textarea>   
+        <input class="button" type="submit" value="Envoyer">
+    </form>  
     
+    <div class="bye">
+        <p>Nous vous remercions d'avoir visité notre site et espèrons vous revoir très bientôt.</p>
+    </div>
+    <div class="border">
+    </div>
+    <footer>
+        <div class="div_footer1">
+            <a href="contact.html">Contactez nous</a>
+        </div>
+        <div class="div_footer2">
+            <p>Ou rejoignez nous sur:</p>
+        </div>
+        <div class="div_footer3">
+            <img src="assets/logo_insta.png" alt="logo reseau sociaux"  height="100%">
+            <img src="assets/logo_facebook.png" alt="logo de facebook" height="100%">
+        </div>
+    </footer>
 </body>
 </html>

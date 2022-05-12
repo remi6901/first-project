@@ -1,11 +1,15 @@
-const message =
-  "Merci pour votre message";
+console.log("connecté");
+const list = document.querySelector(".burger");
+const icon = document.querySelector(".icon")
 
-  const contact = document.querySelector(".contact");
-  contact.addEventListener("submit", function(event){
-      event.preventDefault();
-      alert(message);
-  })
+icon.addEventListener("click", function(){
+  list.classList.toggle("list-visible");
+  icon.classList.toggle("icon-visible");
+})
+
+
+
+
 
 
 

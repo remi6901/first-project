@@ -1,10 +1,11 @@
 *{
     text-decoration: none;
+    list-style: none;
     font-family:'Georgia','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
 }
     body{
-    margin:0;
     font-size: 20px;
+    margin: 0;
     
 }
 /* CSS body*/
@@ -22,6 +23,10 @@
 
 .sideNav{
     width: 100%;
+}
+
+.navMenu{
+    height: 150px;
 }
 .menu{
     display: flex;
@@ -45,6 +50,50 @@
    text-shadow: black 10px 15px 10px;
    font-size: 25px;
 }
+
+.icon{
+    font-size: 50px;
+    color: black;
+    z-index: 999;
+    position: fixed;
+    top:0;
+    cursor: pointer;
+}
+
+.navBurger{
+    display: none;
+}
+
+.burger{
+    position: fixed;
+    width: 100%;
+    top: -100vh;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background:linear-gradient(to left, black, white 40%, white 60%, black);;
+    height: 50vh;
+    transition: top 1s;
+}
+
+.burger a{
+    font-size: 14px;
+    color: black;
+
+}
+
+.list-visible{
+    top:0;
+}
+
+.icon-visible{
+    color: white;
+}
+
 
 
 /*CSS header*/
@@ -118,8 +167,8 @@ width: 100%;
 }
 
 .container_home img{
-    padding-left: 10%;
-    padding-top: 10%;
+    padding-left: 15%;
+    padding-top: 15%;
 }
 .container_home2 img{
     padding-left: 10%;
@@ -129,6 +178,7 @@ width: 100%;
     
 }
 .container_home3 img{
+    margin-top: 10vh;
     padding-left: 10%;
     padding-top: 10%;
 }
@@ -328,9 +378,19 @@ form input, form textarea, form label{
     margin-left: 25%;   
 }
 
+form input, form textarea{
+    border: 1px solid black;
+}
+
 form .button{
    width: 15%;
    margin-left:60%;
+   cursor: pointer;
+}
+
+form .button:hover{
+    background-color: grey;
+    color: white;
 }
 
 .bye{
@@ -345,88 +405,69 @@ form .button{
 /*CSS footer*/
 footer{
     width: 100%;
-    height: 20vh;
-    background-color: rgb(210, 210, 210);
+    height: 40vh;
+    background:linear-gradient(to left, black, white 40%, white 60%, black);
     margin-top: 15vh;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
       
 }
 
-.div_footer1{
-   padding-left: 5%;    
-}
-.div_footer1 a{
-    color: black;
-    line-height: 20vh;
-    text-decoration: underline; 
-    cursor: pointer;  
+.div_footer1, .div_footer3{
+    width: 30%;
+    height: auto; 
 }
 
-.div_footer2 p{
-    line-height: 15vh
+.div_footer2{
+    width:15%;
+}
+
+.div_footer2 img{
+    width: 100%;
+    
+}
+
+.div_footer1 a{
+    color: white;
+    text-decoration: underline;
+    padding-left: 10px;
 }
 
 .div_footer3{
     display: flex;
+    flex-direction: column;
 }
-footer a:hover{
-    font-size: 25px;
+
+.div_footer3 img{
+    padding-top: 5px;
+    padding-left: 50%;
 }
+
+
 /*CSS footer*/
 /*CSS Media queries*/
-/*CSS Media queries home*/
 @media screen and (max-width:1000px) {
     body{
         font-size: 14px;
     }
-    .logo{
-        width: 25%;
-    }
-    .navMenu{
-        width: 100%;
-    }
-    .menu{
-        width: 50%;
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       margin:0;
-       padding: 0;
-       padding-top: 5vh;
-       padding-bottom: 5vh;
-   }
 
-   .menu li{
-      margin-top: 5px;
-      margin-right: 70%;
-      width: 40%;
-      margin-right: 100%;
-      background-color: rgb(210, 210, 210);
-      border-radius: 10px;
-      
-   }
-
-   .menu li a{
-       font-size: 14px;  
-   }
-
-   .menu a:hover{
-      font-size: inherit ;;
-   }
-   
    /*Media queries home*/
+   .border{
+       margin-top: 10vh;
+       margin-bottom: 10vh;
+   }
    .word_home p{
-       padding-bottom: 15vh;
+       margin-bottom: 5vh;
    }
    .section_img{
        display: flex;
        flex-direction: column;
-       height: 300vh;
+       height: 500vh;
    }
    .container_home, .container_home2, .container_home3{ 
        width: 100%;
-       height: 40%;
+       height: 60%;
        margin-top: 1vh;
    }
    .container_home ul, .container_home2 ul, .container_home3 ul{
@@ -458,14 +499,10 @@ footer a:hover{
        width: 90%;
    }
    /*Media queires site*/
-   /*Media queries contact*/
-    form input, form textarea{
-    border: 2px solid black;
-    }
-    /*Media queries contact*/
-    /*Media queires contact*/
+   /*Media queires footer*/
     footer{
         font-size: 12px;
+        margin-top: 5vh;
     }
     .div_footer3 img{
       height: 50%;
@@ -473,4 +510,44 @@ footer a:hover{
       margin-bottom: 25%;
     }
     /*Media queries footer*/
+}
+
+@media screen and (max-width: 800px){
+
+    .div_logo{
+        padding-bottom: 15vh;
+    }
+
+    .navMenu{
+        display: none;
+    }
+
+    .navBurger{
+        display: block;
+    }
+
+    footer{
+        height: 25vh;
+    }
+
+    .div_footer1 a{
+        height: 100%;
+    }
+
+    .container_home2 img{
+        height: 30vh;
+    }
+
+    .container_home3 img{
+        height: 45vh;
+        width: 70%;
+    }
+
+    .section_img{
+        height: 280vh;
+    }
+
+    .container_home, .container_home2, .container_home3{
+        height: 100vh;
+    }
 }

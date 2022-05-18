@@ -500,9 +500,7 @@ footer{
        display: none;
    }
 
-   .div_flex_img img{
-       width: 90%;
-   }
+  
    /*Media queires site*/
    /*Media queires footer*/
     footer{
@@ -554,5 +552,9 @@ footer{
 
     .container_home, .container_home2, .container_home3{
         height: 100vh;
+    }
+
+    .div_flex_img img{
+        width: 90%;
     }
 }

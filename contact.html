@@ -8,6 +8,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="div_logo">
+        <img class="logo" src="assets/logo-pompei.jpg" alt="loge-pompei">
+    </div>
+    <header>
+        <nav class="navMenu">
+            <ul class="menu">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="history.html">HISTOIRE</a></li>
+                <li><a href="site.html">LE SITE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="navBurger">
+            <div class="icon">☰</div> 
+            <ul class="burger">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="history.html">HISTOIRE</a></li>
+                <li><a href="site.html">LE SITE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="assets/contact/photo-contact.jpg" alt="photo-de-l'amphitheatre-de-pompei" width="100%">
+    <div class="border">
+    </div>
+    <h2>Formulaire de contact</h2>
+    <section class="section_paragraph">
+        <div class="div_paragraph">
+            <h3 class="h3_contact">Message:</h3>
+        </div>
+    </section>
+    <form class="contact" action="">
+        <label for="first_name"> Nom et Prenom</label> 
+        <input type="text" name="first_name" id="first_name" placeholder="Ex: Durand Martin">
+        <label for="e-mail">E-mail</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="Ex: ....@gmail.com">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Taper votre texte ici"></textarea>   
+        <input class="button" type="submit" value="Envoyer">
+    </form>  
     
+    <div class="bye">
+        <p>Nous vous remercions d'avoir visité notre site et espèrons vous revoir très bientôt.</p>
+    </div>
+    <div class="border">
+    </div>
+    <footer>
+        <div class="div_footer1">
+            <a href="contact.html">Contactez nous</a>
+        </div>
+        <div class="div_footer2">
+           <img src="assets/Logo-pompei.jpg" alt="">
+        </div>
+        <div class="div_footer3">
+            <img src="assets/social-media-ge85b64509_640.png" alt="" width="40%" height="120vh">          
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
 </body>
 </html>

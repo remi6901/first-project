@@ -1,0 +1,561 @@
+*{
+    text-decoration: none;
+    font-family:'Georgia','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif
+}
+    body{
+    font-size: 20px;
+    margin: 0;
+    
+}
+/* CSS body*/
+/*CSS header*/
+.div_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width:15%;
+    margin: auto;
+}
+
+.sideNav{
+    width: 100%;
+}
+
+.navMenu{
+    height: 150px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+}
+
+.menu a{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.menu a:hover{
+   text-shadow: black 10px 15px 10px;
+   font-size: 25px;
+}
+
+.icon{
+    font-size: 50px;
+    color: black;
+    z-index: 999;
+    position: fixed;
+    top:0;
+    cursor: pointer;
+}
+
+.navBurger{
+    display: none;
+}
+
+.burger{
+    position: fixed;
+    width: 100%;
+    top: -100vh;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background:linear-gradient(to left, black, white 40%, white 60%, black);;
+    height: 50vh;
+    transition: top 1s;
+}
+
+.burger a{
+    font-size: 14px;
+    color: black;
+
+}
+
+.list-visible{
+    top:0;
+}
+
+.icon-visible{
+    color: white;
+}
+
+
+
+/*CSS header*/
+/*CSS home*/
+.home{
+    width: 100%;
+   
+}
+
+.img_home{
+    width: 100%;
+}
+
+.border{
+    width: 10%;
+    border-bottom: 2px solid black;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+h2{
+    padding-bottom: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.word_home{
+text-align: center;
+width: 100%;
+}
+.word_home p{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 15vh;
+}
+
+.section_img{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 20vh;
+    padding-bottom: 5vh; 
+}
+
+.container_home, .container_home3{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(210, 210, 210);
+    font-size: 16px;
+    box-shadow: 50px 5px 100px black;
+    margin-right: 1%;
+
+}
+
+.container_home2{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 35%;
+    height: 115vh;
+    background-color: rgb(210, 210, 210);
+    font-size: 16px;
+    box-shadow: 50px 5px 100px black;
+    margin-right: 1%;
+}
+
+.container_home img{
+    padding-left: 15%;
+    padding-top: 15%;
+}
+.container_home2 img{
+    padding-left: 10%;
+    padding-left: 10%;
+    padding-top: 20%;
+    padding-bottom: 10vh;
+    
+}
+.container_home3 img{
+    margin-top: 10vh;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.container_home h4, .container_home2 h4, .container_home3 h4{
+    text-align: center;
+}
+
+
+/*CSS home*/
+/*CSS history*/
+.history{
+    width: 100%;
+}
+
+.img_history{
+    width: 100%;
+    
+}
+
+.img-history1{
+    width: 100%;
+
+}
+
+.img-history1 img{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    box-shadow: 20px 10px 50px black;
+    border-radius: 10px;
+    
+}
+
+.section_paragraph{
+    width: 100%;
+}
+
+.div_paragraph{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.panorama{
+    width: 100%;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.panorama img{
+    box-shadow: 20px 10px 50px black;
+    border-radius: 10px;
+}
+
+.img-history2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.img-history2 img{
+    border-radius: 10px;
+    box-shadow: 20px 10px 50px black;
+}
+/*CSS history*/
+/*CSS site*/
+.site{
+    width: 100%;
+}
+
+.img_site{
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width:260px;
+    height: 120vh;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+   
+    
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    transform-style: preserve-3d; 
+    animation: rotate360 150s infinite forwards linear;    
+}
+
+    .img-carousel { 
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        top: 150px;
+        left: 10px;
+        right: 10px;
+        background-size:cover;
+        display: flex;
+      }
+
+    .img-carousel:nth-child(1){
+        background-image: url(assets/site/carousel/photo-carousel\ \(1\).jpg);
+        transform:rotateY(0deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(2){
+        background-image: url(assets/site/carousel/photo-carousel\ \(2\).jpg);
+        transform: rotateY(30deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(3){
+        background-image: url(assets/site/carousel/photo-carousel\ \(3\).jpg);
+        transform: rotateY(60deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(4){
+        background-image: url(assets/site/carousel/photo-carousel\ \(4\).jpg);
+        transform: rotateY(90deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(5){
+        background-image: url(assets/site/carousel/photo-carousel\ \(5\).jpg);
+        transform: rotateY(120deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(6){
+        background-image: url(assets/site/carousel/photo-carousel\ \(6\).jpg);
+        transform: rotateY(150deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(7){
+        background-image: url(assets/site/carousel/photo-carousel\ \(7\).jpg);
+        transform:rotateY(180deg) translateZ(430px)
+    }
+    .img-carousel:nth-child(8){
+        background-image:url(assets/site/carousel/photo-carousel\ \(8\).jpg);
+        transform: rotateY(210deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(9){
+        background-image: url(assets/site/carousel/photo-carousel\ \(9\).jpg);
+        transform: rotateY(240deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(10){
+        background-image: url(assets/site/carousel/photo-carousel\ \(10\).jpg);
+        transform: rotateY(270deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(11){
+        background-image: url(assets/site/carousel/photo-carousel\ \(11\).jpg);
+        transform: rotateY(300deg) translateZ(430px);
+    }
+    .img-carousel:nth-child(12){
+        background-image: url(assets/site/carousel/photo-carousel\ \(12\).jpg);
+        transform: rotateY(330deg) translateZ(430px);
+    }
+
+    @keyframes rotate360{
+        from {
+            transform: rotateY(0deg);
+          }
+          to {
+            transform: rotateY(-360deg);
+          }
+        }
+        
+        
+        .section_flex_img{
+            width: 100%;
+        
+        }
+        .div_flex_img{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+        }   
+        
+        .div_flex_img img{
+            border-radius: 30px;
+            margin-bottom: 5vh;
+            box-shadow:20px 20px 50px black;       
+        }
+
+        
+/*CSS site*/
+/*CSS contact*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15vh;
+}
+
+form input, form textarea, form label{
+    width: 50%;
+    margin-left: 25%;   
+}
+
+form input, form textarea{
+    border: 1px solid black;
+}
+
+form .button{
+   width: 15%;
+   margin-left:60%;
+   cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.93);
+    /*Pour faire l'effet appuyé du bouton*/
+}
+
+form .button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.bye{
+    font-style:oblique;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+/*CSS contact*/
+/*CSS footer*/
+footer{
+    width: 100%;
+    height: 40vh;
+    background:linear-gradient(to left, black, white 40%, white 60%, black);
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+.div_footer1, .div_footer3{
+    width: 30%;
+    height: auto; 
+}
+
+.div_footer2{
+    width:15%;
+}
+
+.div_footer2 img{
+    width: 100%;
+    
+}
+
+.div_footer1 a{
+    color: white;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.div_footer3{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_footer3 img{
+    padding-top: 5px;
+    padding-left: 50%;
+}
+
+
+/*CSS footer*/
+/*CSS Media queries*/
+@media screen and (max-width:1000px) {
+    body{
+        font-size: 14px;
+    }
+
+   /*Media queries home*/
+   .border{
+       margin-top: 10vh;
+       margin-bottom: 10vh;
+   }
+   .word_home p{
+       margin-bottom: 5vh;
+   }
+   .section_img{
+       display: flex;
+       flex-direction: column;
+       height: 500vh;
+   }
+   .container_home, .container_home2, .container_home3{ 
+       width: 70%;
+       height: 60%;
+       margin-top: 1vh;
+       margin-left: 15%;
+       margin-right: 15%;
+   }
+   .container_home ul, .container_home2 ul, .container_home3 ul{
+       padding-left: 20%;
+       padding-right: 20%;
+       padding-bottom: 20%;
+   }
+
+    .container_home img, .container_home2 img, .container_home3 img{
+       width: 70%;
+       padding-left: 15%;
+       padding-right: 15%;   
+   }
+/*Media queries home*/
+/*Media queries site*/
+   #border2{
+       border: none;
+   }
+   
+   .container{
+       height: 0;
+
+   }
+   .carousel{
+       display: none;
+   }
+
+  
+   /*Media queires site*/
+   /*Media queires footer*/
+    footer{
+        font-size: 12px;
+        margin-top: 5vh;
+    }
+    .div_footer3 img{
+      height: 50%;
+      margin-top: 25%;
+      margin-bottom: 25%;
+    }
+    /*Media queries footer*/
+}
+
+@media screen and (max-width: 800px){
+
+    .div_logo{
+        padding-bottom: 15vh;
+    }
+
+    .navMenu{
+        display: none;
+    }
+
+    .navBurger{
+        display: block;
+    }
+
+    footer{
+        height: 25vh;
+    }
+
+    .div_footer1 a{
+        height: 100%;
+    }
+
+    .container_home2 img{
+        height: 30vh;
+    }
+
+    .container_home3 img{
+        height: 45vh;
+        width: 70%;
+    }
+
+    .section_img{
+        height: 280vh;
+    }
+
+    .container_home, .container_home2, .container_home3{
+        height: 100vh;
+    }
+
+    .div_flex_img img{
+        width: 90%;
+    }
+}
